@@ -201,7 +201,7 @@ Hindi Lofi
 
             const player = document.getElementById("audio")
 
-            player.src = localStorage.setItem("play", "https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/hindi")
+            player.src = localStorage.getItem("play") || "https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/normal"
 
 
              normalLofi.addEventListener("click", () =>{
