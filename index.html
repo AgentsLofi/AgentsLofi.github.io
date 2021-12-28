@@ -3,14 +3,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
 
-    <body style="background-image: url(https://wallpaperaccess.com/full/2671935.jpg);background-repeat: no-repeat; background-size: cover; ">
+    <body style="background-image: url(https://wallpaperaccess.com/full/4474894.jpg);background-repeat: no-repeat; background-size: cover; ">
 
         <center>
 
         <h1 style="font-family: 'Shadows Into Light', cursive; font-size: 100px; color: chartreuse;">Agents Lofi</h1>
 
-        <h1 style="font-family: 'Shadows Into Light', cursive; font-size: 30px;color:rgb(211, 224, 164);">The All in One Lofi Hub</h1>
+        <h1 style="font-family: 'Shadows Into Light', cursive; font-size: 40px;color:rgb(214, 238, 1);">The All in One Lofi Hub</h1>
         
         <br>
 
@@ -26,7 +27,7 @@
 
         <br>
      <!-- HTML !-->
-<button class="button-82-pushable" role="button" id="nlofi">
+<!--<button class="button-82-pushable" role="button" id="nlofi">
     <span class="button-82-shadow"></span>
     <span class="button-82-edge"></span>
     <span class="button-82-front text">Normal Lofi</span>
@@ -43,7 +44,7 @@
     <span class="button-82-shadow"></span>
     <span class="button-82-edge"></span>
     <span class="button-82-front text">Hindi Lofi</span>
-  </button> 
+  </button> !-->
   
 <!--- <button id="nlofi">Normal Lofi</button>
 
@@ -59,23 +60,17 @@ Hindi Lofi
   
       </button> !-->
             
-    <br>
+      <h1 style="text-align: center; font-family: 'Island Moments', cursive;font-size: 100px;color: rgb(255, 136, 1);">Normal Lofi</h1>
 
-    <br>
-
-    <br>
-
-    <br>
-
-    <br>
-
-    <br>
-
-    <br>
-
-    <audio controls>
-      <source id="audio" src="https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/hindi">
+    <audio controls id="player">
+      <source id="audio" src="https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/normal">
       </audio>
+
+      <h1 style="text-align: center; font-family: 'Island Moments', cursive;font-size: 100px;color: rgb(255, 136, 1);">Hindi Lofi</h1>
+
+      <audio controls id="player">
+        <source id="audio" src="https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/hindi">
+        </audio>
 
             </center>
         </body>
@@ -193,36 +188,7 @@ Hindi Lofi
   box-sizing: border-box;
   user-select: none;
 }
-          </style>
-          <script>
-             const normalLofi = document.getElementById("nlofi")
-
-             const hindiLofi = document.getElementById("hlofi")
-
-            const player = document.getElementById("audio")
-
-            player.src = localStorage.getItem("play") || "https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/normal"
-
-
-             normalLofi.addEventListener("click", () =>{
-
-//              player.src = "https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/normal"
-
-              localStorage.setItem("play", "https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/normal")
-
-              window.location.reload()
-
-             })
-
-             hindiLofi.addEventListener("click", () =>{
-
-//              player.src = "https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/hindi"
-
-window.location.reload()
-
-              localStorage.setItem("play", "https://07b44db5-93ef-4b4b-92d5-918dc1b9a886.id.repl.co/lofi/hindi")
-             })
-        </script>
+</style>
           <meta charset="UTF-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
